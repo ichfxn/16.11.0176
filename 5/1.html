@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div ~ p {
+		color: red;
+	}		
+	div.absolute {
+		width: 50px;
+		height: 50px;
+		background-color: pink;
+		position: absolute;
+		left: 100px;
+		top: 150px;
+		transition: width 2s, height 2s;
+	}
+	.absolute:hover {
+		width: 300px;
+		height: 150px;
+	}
+	.rotate {
+		width: 25px;
+		height: 25px;
+		background-color: cyan;
+		position: absolute;
+		left: 250px;
+		top: 150px;
+		transition: 2s;
+	}
+	.rotate:hover{
+		width: 400px;
+		height: 400px;
+		transform: skewX(20deg);
+		transform: skewY(40deg);
+	}
+	.segitiga {
+		height: 0px;
+		width: 0px;
+		border-bottom: 70px solid red;
+		border-right: 70px solid transparent;
+	}
+	</style>
+</head>
+<body>
+<div class="absolute">
+	<p></p>
+</div>
+<div class="rotate"></div>
+<div class="segitiga"></div>
+</body>
+</html>

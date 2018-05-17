@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	body {
+		background-image: url(wood.jpg);
+	}
+	div.kopi {
+		width: 320px;
+		height: 200px;
+	}
+	.segitiga {
+		position: absolute;
+		top: 150px;
+		height: 0px;
+		width: 0px;
+		border-bottom: 60px solid white;
+		border-right: 60px solid transparent;
+	}
+	p {
+		position: absolute;
+		top: 15px;
+		left: 3px;
+	}
+	div.content ~ img {
+		position: absolute;
+		height: 10px;
+		width: 10px;
+		transition: width 2s, height 2s;
+	}
+	.content:hover {
+		border-bottom: 0px;
+		border-right: 0px;
+		width: 320px;
+		height: 200px;
+	}
+	</style>
+</head>
+<body>
+<div class="content">
+this coffe good for you
+<img src="cappucino.jpg" width="320px" height="200px">
+</div>
+<div class="segitiga">
+	<p>40K</p>
+</div>
+</body>
+</html>
